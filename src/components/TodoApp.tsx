@@ -66,7 +66,7 @@ const TodoApp = () => {
         <Card className="p-6 mb-6 shadow-card bg-card border-0">
           <div className="flex gap-3">
             <Input placeholder="What needs to be done?" value={newTodo} onChange={e => setNewTodo(e.target.value)} onKeyPress={handleKeyPress} className="flex-1 border-border/50 focus:border-primary transition-smooth" />
-            <Button onClick={addTodo} disabled={!newTodo.trim()} className="bg-gradient-primary hover:shadow-hover transition-smooth border-0 text-lg text-red-950 rounded-xl bg-fuchsia-950 hover:bg-fuchsia-800">
+            <Button onClick={addTodo} disabled={!newTodo.trim()} className="bg-gradient-primary hover:shadow-hover transition-smooth border-0 text-lg rounded-xl bg-fuchsia-950 hover:bg-fuchsia-800 text-yellow-400">
               <Plus className="h-4 w-4" />
             </Button>
           </div>
